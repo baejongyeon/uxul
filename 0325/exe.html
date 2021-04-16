@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        /*
+        caption으로 게시판 --제목
+        trtd 잡기
+        버튼 tr로 잡기
+        버튼이랑 글쓰기 위치 어떻게 잡는가-- 셀 합쳐서 오른쪽에 붙이기
+        text-align으로 위치 정렬
+        */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 0px auto;
+            width: 900px;
+        }
+
+        th {
+            border-top: 1px solid black;
+            width: 200px;
+            border-bottom: 1px solid black;
+            height: 40px;
+            background-color: blanchedalmond;
+        }
+
+        td {
+            width: 200px;
+            border-bottom: 1px solid black;
+            height: 40px;
+            text-align: center;
+
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        caption {
+            font-weight: bold;
+        }
+
+        .border {
+            border-radius: 16px;
+            padding: (30px 40px);
+            background-color: skyblue;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+            /*
+            border-radius:16px
+            */
+
+        }
+
+        div {
+            width: 150px;
+            height: 320px;
+            margin: 0% auto;
+
+        }
+
+        .bottom {
+            background-position: right;
+        }
+
+        .bj {
+            width: 75px;
+        }
+        .jy {
+            width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <caption>게시판</caption>\
+        <tr>
+            <th class="left">No.</th>
+            <th>title</th>
+            <th class="bj">count</th>
+            <th class="bj">date</th>
+            <th class="jy">좋아요</th>
+            <th class="jy">싫어요</th>
+        </tr>
+        <tr>
+            <td class="left">1</td>
+            <td>제목<span class="border">N</span></td>
+            <td class="bj">0</td>
+            <td class="bj">2010-11-19</td>
+            <td class="jy">0</td>
+            <td class="jy">1</td>
+        </tr>
+        <tr>
+            <td class="left">2</td>
+            <td>제목</td>
+            <td class="bj">2</td>
+            <td class="bj">2010-11-19</td>
+            <td class="jy">40</td>
+            <td class="jy">42</td>
+        </tr>
+        <tr>
+            <td class="left">3</td>
+            <td>제목</td>
+            <td class="bj">345</td>
+            <td class="bj">2010-11-19</td>
+            <td class="jy">112</td>
+            <td class="jy">42</td>
+        </tr>
+        <tr>
+            <td class="left">4</td>
+            <td>제목</td>
+            <td class="bj">456</td>
+            <td class="bj">2010-11-19</td>
+            <td class="jy">44</td>
+            <td class="jy">457</td>
+        </tr>
+        <tr>
+            <td class="left">5</td>
+            <td>제목</td>
+            <td class="bj">324</td>
+            <td class="bj">2010-11-19</td>
+            <td class="jy">75</td>
+            <td class="jy">75</td>
+        </tr>
+        <tr>
+            <td class="left">6</td>
+            <td>제목</td>
+            <td class="bj">22</td>
+            <td class="bj">2010-11-19</td>
+            <td class="jy">4</td>
+            <td class="jy">2</td>
+        </tr>
+    </table>
+
+    <div>
+        <button class="bottom"> << </button>
+        <button class="bottom"> 1 </button>
+        <button class="bottom"> 1 </button>
+        <button class="bottom"> 3 </button>
+        <button class="bottom"> 4 </button>
+        <button class="bottom"> >> </button>
+
+    </div>
+</body>
+
+</html>

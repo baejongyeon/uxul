@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>세로 메뉴 layout</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+
+        body::-webkit-scrollbar-track {
+            background-color: darkkhaki;
+            border-radius: 5px;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: darkorchid;
+            border-radius: 5px;
+        }
+
+        header {
+
+            width: 100%;
+            box-sizing: border-box;
+            clear: both;
+            height: 500px;
+            margin-left: 60px;
+
+        }
+
+        .left_menu {
+            width: 60px;
+            height: 100%;
+            /*1040px - 작업표시줄 제외 사용 가능 공간*/
+            float: left;
+            position: fixed;
+
+            background-color: rgba(136, 130, 130, 0.576);
+        }
+
+        .main_menu {
+            height: 60px;
+            width: 100%;
+            margin-left: 60px;
+
+            box-sizing: border-box;
+            clear: both;
+
+        }
+
+        section {
+            width: 100%;
+            box-sizing: border-box;
+            clear: both;
+            height: 500px;
+            margin-left: 60px;
+
+        }
+
+
+
+        nav img {
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+        }
+
+        #sunflower {
+            background-image: url(/sunflowers-6007847_1920.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+
+        li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 5px 100px;
+        }
+
+        ul {
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+        #main {
+            background-image: url(/cat-5887341_640.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        article {
+            background-color: cornsilk;
+            color: darkgrey;
+            font-size: 20px;
+            width: 400px;
+            height: 200px;
+            top: 100px;
+            left: 50px;
+            position: relative;
+            /*absolute로 잡으면 가장 바깥 부모위치로 잡힘 - 맨위로 올라감**/
+            padding: 30px;
+
+            /*opacity: 0.5;-전체 투명도 조절할때 쓰는 옵션*/
+        }
+
+        .cf_section {
+            text-align: center;
+            padding-top: 98px;
+            background-color: cornsilk;
+        }
+
+        .print_section img {
+            width: 300px;
+            height: 500px;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+
+        .print_section>h2 {
+            font-size: 32px;
+            padding: 50px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="left_menu">
+
+            <a href="#"><img src="/icon/home.png"></a>
+            <a href="#"><img src="/icon/youtube.png"></a>
+            <a href="#"><img src="/icon/profile.png"></a>
+            <a href="#"><img src="/icon/calendar.png"></a>
+            <a href="#"><img src="/icon/blocks.png"></a>
+
+        </nav>
+        <header id="sunflower"></header>
+        <nav class="main_menu">
+            <div>
+                <ul>
+                    <li><a href="#" title="HOME">HOME</a></li>
+                    <li><a href="#" title="COFFEE">COFFEE</a></li>
+                    <li><a href="#" title="CF">CF</a></li>
+                    <li><a href="#" title="PRINT">PRINT</a></li>
+                    <li><a href="#" title="문의하기">문의하기</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <section id="main">
+            <article>
+                <h3>추억이 방울방울</h3>
+                <p>추억이 방울방울 방울방울방울방울이 추억추억 방울이 추억추억이 방울방울 추억이 방울방울</p>
+            </article>
+        </section>
+        <section class="cf_section">
+            <iframe width="500" height="443" src="https://www.youtube.com/embed/aGSHoXXJmUY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+        <section class="print_section">
+            <h2>print</h2>
+            <img src="/sunflowers-6007847_1920.jpg" alt="">
+            <img src="/sunflowers-6007847_1920.jpg" alt="">
+            <img src="/sunflowers-6007847_1920.jpg" alt="">
+
+        </section>
+        <section id="main"></section>
+    </div>
+</body>
+
+</html>

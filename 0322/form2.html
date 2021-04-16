@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>홈태그</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <form action="" method="get">
+        가입 약관 동의 여부
+
+        <!--radio button은 여러개 중 하나의 항목만 선택할때 쓰임
+        name 속성이 같으면 묶어서 같이 데이터 보냄 (둘중에 하나만 인식해서 전송)
+        name 속성 값을 동일하게 설정해서 radio button을 그룹 묶어야 하나만 선택 가능-->
+
+        <input type="radio" name="agree" value="yes">예
+        <input type="radio" name="agree" value="no">아니오<br>
+
+        날짜 : <input type="date" name="date">
+        수량 : <input type="number" name="number" id="" min="0" max="100" step="5"><br>
+        <!--min 최솟값 max 최댓값 step 한번에 몇개 올릴지-->
+        첨부파일 : <input type="file" name="" id=""><br>
+        <!--첨부파일은 input 태그중 file 속성을 이용한다-->
+        슬라이더 : <input type="range" name="" id="" value="1"><br>
+        color picker : <input type="color" name="color" id=""><br>
+        <select name="sel1">
+            <option value="f">--선택--</option>
+            <option value="a">선택1</option>
+            <option value="b" selected>선택2</option>
+            <option value="c">선택3</option>
+            <option value="d">선택4</option>
+        </select>
+        <!--select에서 넘어가는 전송값은 option의 value값임
+            selected 이용해서 처음 기본적으로 선택할 항목을 지정 가능하다-->
+        <!--input 태그의 텍스트 상자에서 쓰던 속성을 전부 사용이 가능
+        cols : 컬럼 갯수, 글자 갯수 rows : 줄 갯수
+        textarea 태그에서는 태그안에 내용을 넣으면 넣은 내용이 그대로 미리 입력되어 있다-->
+        <textarea name="" id="" cols="10" rows="10"></textarea>
+        <br>
+        <button type="submit">전송</button>
+    </form>
+</body>
+
+</html>

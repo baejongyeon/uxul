@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        /*
+        add, delete, search
+        */
+        //배열 생성
+        var arr = [];
+
+        arr.push(1);
+        arr.push(4);
+        arr.push(5);
+        arr.push(3);
+        arr.push(2);
+        arr.push(1);
+
+PrintArray(arr);
+document.write("<h2>배열 요소 검색</h2>")
+document.write("값 5에 해당하는 인덱스 번호 :", arr.indexOf(5),"<br>");
+document.write("값 3에 해당하는 인덱스 번호 :", arr.indexOf(3),"<br>");
+
+document.write("<h2>배열 요소 삭제</h2>")
+document.write(arr.splice(arr.indexOf(5),1),"<br>");
+arr.splice(arr.indexOf(5),1); //5에 해당하는 인덱스 부터 1개만 추출하겠다는 뜻
+PrintArray(arr);
+        function PrintArray(arr) {
+            for (n = 0; n < arr.length; n++) {
+                document.write(arr[n], "<br>");
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

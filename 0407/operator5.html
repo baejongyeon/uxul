@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>논리 연산자</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script>
+//논리연산자 : and or not
+//  && (and); 양쪽의 비교연산 결과가 모두 true 일때만 true
+// || (or); 양쪽의 비교연산 결과가 둘중 하나가  true면 true
+// | (not); true면 false , false면 true로 바꿈
+// 같이 있으면 먼저 연산해줄것 묶어주기
+//논리 값으로 했을때, 숫자는 정확하게 0을 false로 두고 나머지는 true 인식 --> 신호가 들어온것
+// 사칙 복합 증감 논리 ~
+var n1 =10;
+var n2 =20;
+var result;
+result = n1 >= 10 && n2 <= 20;
+document.write(result,"<br>");
+result = n1 < 10 && n2 >= 20;
+document.write(result,"<br>");
+result = n1 >= 10 || n2 <= 20;
+document.write(result,"<br>");
+result = n1 < 10 || n2 >= 20;
+document.write(result,"<hr>");
+document.write(!result,"<hr>");
+document.write(!1,"<hr>");
+document.write(!100,"<hr>");
+document.write(!0,"<hr>");
+document.write(!-100,"<hr>");
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

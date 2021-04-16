@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        html {
+            font-size: 32px;
+        }
+
+        .container,
+        body {
+            font-size: 16px;
+        }
+
+        .first {
+            font-size: 2rem;
+        }
+
+        .second {
+            font-size: 2em;
+        }
+
+        .px32 {
+            font-size: 32px;
+        }
+        /*rem은 em과 동일하게 작용하지만 적용되는 시점이 다르다
+        em은 부모태그 기준으로 잡고 rem은 html 기본 태그 기준으로 잡음*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="first">글꼴 크기 rem 단위</p>
+        <p class="second">글꼴 크기 em 단위</p>
+    </div>
+    <p>
+        기본 글꼴
+    </p>
+    <p class="px32">
+        32px
+    </p>
+</body>
+
+</html>

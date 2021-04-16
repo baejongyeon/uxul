@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .container {
+            width: 1200px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 0px auto;
+            position: fixed;
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            top: 100px;
+            left: 100px;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .relative {
+            position: relative;
+        }
+        /* 보통 relative absolute 많이 사용함 relative로 레이아웃 잡음*/
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item absolute">
+            <h2>제목-1</h2>
+            <p>내용</p>
+        </div>
+    </div>
+    <div>
+        <div class="item fixed">
+            <h2>제목-2</h2>
+            <p>내용</p>
+        </div>
+    </div>
+    <div>
+        <div class="item relative">
+            <h2>제목-3</h2>
+            <p>내용</p>
+        </div>
+    </div>
+</body>
+
+</html>

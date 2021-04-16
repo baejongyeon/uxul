@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>글꼴 스타일</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+
+    /* 폰트 색상
+    rgb (0~255,0~255,0~255)
+    #ff0011---> html 색상표
+    */
+    .color{
+        color: #ff0011;
+    }
+    /*기울임 꼴*/
+    .italic{
+        font-style: italic;
+    }
+    /* 밑줄 : underline, overline, line-through / none --> 밑줄 없애주는 속성 (하이퍼링크에서)*/
+    .line{
+        text-decoration: none;
+    }
+    /*글꼴 두껍게*/
+    .bold{
+        font-weight: bold;
+    }
+    /*폰트 바꾸기
+    'ㅇㄹ', 'ㅇㄹ' 두번째부터는 첫번째가 없을 경우에 대비한 서브폰트 /오픈소스 폰트
+    */
+    .font{
+        font-family: 'Hi Melody', cursive;;
+    }
+    @font-face {
+        font-family: 'bp';
+        src: url(/BlackAndWhitePicture-Regular.ttfdfd) ,url(/EastSeaDokdo-Regular.ttf);
+    }
+    .new_font{
+        font-family: 'bp';
+    }
+
+
+</style>
+
+</head>
+<body>
+    <a href="#" class="line">하이퍼링크</a>
+    <p class="line">탄핵결정은 공직으로부터 파면함에 그친다. 그러나, 이에 의하여 민사상이나 형사상의 책임이 면제되지는 아니한다.</p>
+
+<p class="new_font color">국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.</p>
+
+<p class="bold">대한민국의 경제질서는 개인과 기업의 경제상의 자유와 창의를 존중함을 기본으로 한다.</p>
+
+<p class="font">대통령의 임기연장 또는 중임변경을 위한 헌법개정은 그 헌법개정 제안 당시의 대통령에 대하여는 효력이 없다.</p>
+
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>display</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<style>
+    *{
+        margin: 0px;
+padding: 0px;
+    }
+    /*
+    태그가 inline과 block으로 구분을 하는데
+    태그를 inline과 block 등 다른 형태로 변경을 할때 사용하는 css가 display
+    inline block inline-block none
+    */
+    a{
+        width: 100px;
+        height: 50px;
+        border: 1px solid black; /* inline 속성이라 width height 안먹음*/
+    }
+    .ing{
+        visibility: hidden;
+    }
+    /*ul{
+        list-style-type: none;
+    }*/
+    li{
+        border: 1px solid black;
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+    }
+    ul{
+        font-size: 16px;
+    }
+    
+.menu_a{
+    width: 100%;
+    font-size: 16px;
+    line-height: 16px;
+    color: black;
+    text-decoration: rgb(71, 64, 64);
+    padding: 17px 0px;
+    display: inline-block;
+    box-sizing: border-box;
+    
+    
+}
+
+</style>
+
+</head>
+
+<body>
+    <!--
+inline tag : a, img, span, u, b, i 
+      특징 : 글자 단위로 같은 줄에 출력된다
+             레이아웃 용도로는 안좋다 내용적인 부분임
+가로세로 길이 설정이 안된다. 여백 설정도 일부만 가능하다
+
+             block tag : h1-h5, p, div, hr 
+    특징 : block 단위로 출력 후 줄 바꿈 된다
+           레이아웃 용도로 좋다 내용 영역에 해당함
+가로세로 길이 설정, 여백 설정이 가능함
+
+inline block{} : inline이지만 가로세로 길이, 여백 설정 가능
+메뉴바-- 목록 태그
+    -->
+<ul>\
+    <li><a href="#">항목1</a></li><li><a href="#">항목5</a></li>
+    <li><a href="#">항목2</a></li>
+    <li><a href="#">항목3</a></li>
+    <li><a href="#">항목4</a></li>
+    <li><a href="#">항목5</a></li>
+</ul>
+<a href="#">버튼</a>
+<a href="#">버튼</a>
+<a href="#">버튼</a>
+<a href="#">버튼</a>
+<a href="#">버튼</a>
+<hr>
+<h2>display : none  visibility : hidden 차이 </h2>
+<!--none은 컨텐츠 자체 회수 hidden은 자리는 그대로지만 보이는 것만 안보임-->
+<img src="/cat-5887341_640.jpg" class="ing">
+<img src="/cat-5887341_640.jpg">
+
+
+
+
+
+</body>
+
+</html>

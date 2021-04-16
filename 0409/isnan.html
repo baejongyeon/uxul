@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script>
+    document.write(isNaN(45),"<br>"); //false
+    document.write(isNaN("45481"),"<br>"); //false
+    document.write(isNaN("dfsdfdsf"),"<br>"); //true
+    document.write(isNaN(true),"<br>");//false --> 0과 1로 저장되기 때문에
+    //isNaN 함수는 숫자가 아니어야 true -- 내가 숫자를 입력받았는지 아닌지 체크할수있음
+    document.write(isNaN(NaN),"<br>");
+    document.write(isNaN(undefined),"<br>");
+    document.write(isNaN(null),"<hr>"); //null은 숫자로 표현하면 무엇인가
+    document.write(Number(true),"<br>");//1
+    document.write(Number(false),"<br>");//0
+    document.write(Number(null),"<br>");//0
+    //null --> 비었다, 문서 끝났다는 의미로 쓴다 숫자 코드는 0임
+</script>
+</head>
+<body>
+    
+</body>
+</html>

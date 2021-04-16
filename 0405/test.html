@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            width: 100%;
+            min-width: 1200px;
+            margin-left: 60px;
+            clear: both;
+            height: 300px;
+            box-sizing: border-box
+        }
+
+        .main_menu {
+            width: 100%;
+            min-width: 1200px;
+            margin-left: 60px;
+            clear: both;
+            box-sizing: border-box;
+            height: 60px;
+            border: 2px solid gainsboro;
+        }
+
+        .left_menu {
+            width: 60px;
+            height: 100%;
+            float: left;
+            position: fixed;
+            background-color: gainsboro;
+            top: 0;
+            left: 0;
+        }
+
+        .left_menu img {
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+        }
+
+        #header_img {
+            background-image: url(/sunflowers-6007847_1920.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .main_menu ul {
+            text-align: center;
+        }
+
+        .main_menu li {
+            display: inline-block;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 5px 100px;
+        }
+
+        .main_menu a {
+            text-decoration: none;
+            color: black;
+        }
+
+        section {
+            width: 100%;
+            min-width: 1200px;
+            margin-left: 60px;
+            text-align: center;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        section>div {
+            text-align: center;
+        }
+
+        table {
+            margin: 0 auto;
+
+        }
+
+        h1 {
+            padding: 15px 0px;
+        }
+
+        tr {
+            height: 30px;
+        }
+
+        .input_size {
+            width: 250px;
+            height: 30px;
+        }
+
+        .height {
+            height: 30px;
+        }
+
+        table input {
+            padding-left: 16px;
+        }
+
+        .padding_left {
+            padding-left: 16px;
+            padding-top: 10px;
+        }
+
+        span {
+            font-size: 24px;
+        }
+
+        .font_weight {
+            font-weight: bold;
+        }
+        .btn_dsg{
+            outline: none;
+            background-color: rgb(69, 178, 250);
+            color: white;
+            width: 80px;
+            height: 30px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header id="header_img"></header>
+    <nav class="left_menu">
+        <a href="#"><img src="/icon/home.png"></a>
+        <a href="#"><img src="/icon/youtube.png"></a>
+        <a href="#"><img src="/icon/profile.png"></a>
+        <a href="#"><img src="/icon/calendar.png"></a>
+        <a href="#"><img src="/icon/blocks.png"></a>
+
+    </nav>
+    <nav class="main_menu">
+        <div>
+            <ul>
+                <li><a href="#" title="HOME">HOME</a></li>
+                <li><a href="#" title="COFFEE">COFFEE</a></li>
+                <li><a href="#" title="CF">CF</a></li>
+                <li><a href="#" title="PRINT">PRINT</a></li>
+                <li><a href="#" title="문의하기">문의하기</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div>
+            <h1>제품 문의하기</h1>
+            <form action="#" method="GET">
+                <table>
+                    <tr>
+                        <td class="right"><label for="title" class="font_weight">제목</label></td>
+                        <td class="left"><input type="text" name="title" id="title" placeholder="제목을 입력해주세요"
+                                class="input_size"></td>
+                    </tr>
+                    <tr>
+                        <td class="right"><label for="name" class="font_weight">작성자</label></td>
+                        <td class="left"><input type="name" name="name" id="name" placeholder="작성하신 분 성함을 입력해주세요"
+                                class="input_size"></td>
+                    </tr>
+                    <tr>
+                        <td class="right"><label for="mail" class="font_weight">답변받을 이메일</label></td>
+                        <td class="left">
+                            <input type="text" name="mail" id="mail" placeholder="이메일 주소" class="height"><span> @
+                            </span><select name="mail" id="mail" class="height">
+                                <option value="gmail.com" selected>gmail.com</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="hanmail.net">hanmail.net</option>
+                                <option value="직접입력">직접입력</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="right"><label for="text" class="font_weight">문의내용</label></td>
+                        <td class="left">
+                            <textarea cols="40" rows="10" placeholder="문의내용을 입력해주세요" class="padding_left"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left"><a href="#" title=""><button class="btn_dsg">문의하기</button></a></td>
+                        <td class="right"><a href="#" title=""><button class="btn_dsg">초기화</button></a></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

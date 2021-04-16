@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script>
+    //return ox 함수 실행시 필요한 데이터 ox
+    //return --> 일을 시킨 사람에게 결과를 전달
+    //           결과가 이미 나왔기 때문에 더이상 함수진행이 불필요함
+    //매개변수 o return o
+    function sum(a,b){
+        //일을 실행하는 영역
+        return a+b;
+    }
+
+    var result = sum (10,30);
+    document.write(result);
+    //매개변수 x return o
+    function inputnumber(){
+        var result = Number(prompt("숫자 입력"))
+        return result;
+    }
+    //매개변수 o return x
+    function printresult(result){
+        document.write("결과값 : " + result);
+    }
+    //매개변수 x return x
+    function init(){
+        var n1 = inputnumber();
+        var n2 = inputnumber();
+        var result = sum(n1, n2);
+        document.write(result);
+    }
+    init();
+</script>
+</head>
+<body>
+    
+</body>
+</html>

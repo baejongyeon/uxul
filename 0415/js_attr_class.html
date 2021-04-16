@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+
+        .box1 {
+            background-color: blue;
+        }
+
+        .box2 {
+            background-color: crimson;
+        }
+
+        .border {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1" onmouseover="changeBackground();"></div>
+    <script>
+        function changeBackground() {
+            //박스 선택
+            var box = document.getElementsByClassName("box1")[0];
+            //선택된 박스의 배경색 읽어오기
+            //box.style <--태그 style 속성에서 적용한 값들을 읽어옴
+            console.log(box.style.backgroundColor);
+            console.log(box.className);
+            box.className = "box2";
+            console.log(box.style.backgroundColor);
+            console.log(box.className);
+            box.className += " border";
+        }
+
+
+        /function removeborder() {
+            var box = document.getElementsByTagName("div")[0];
+            //클래스 속성값의 border 클래스 삭제
+            //alert(box.className);
+            
+            //box.className = box.className.replace("border","");
+            //box.className = box.className.trim();
+            //trim -- 좌우 여백 지우기
+
+            //alert(box.className.length);
+
+            var arr = box.className.split(" ");
+            //border에 해당하는 배열 요소를 삭제
+            arr= arr.splice(arr.indexOf("border"),1);
+            //배열에 있는 모든 요소를 공백으로 구분하여
+            //하나의 문자열로 만든 후 클래스 속성값에 저장
+            box.className = arr.join(" ");
+
+
+        }
+    </script>
+</body>
+
+</html>

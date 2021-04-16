@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script>
+    var str = "helloworld test korea football";
+        //문자열 부분 추출하는 함수가 substr substring
+    document.write(str.substr(4,10),"<br>"); //4번 인덱스 부터 열글자
+    document.write(str.substring(4,10),"<br>"); //열번째 인덱스 전까지만 뽑음
+
+    document.write(str.substring(4),"<br>");
+    //4번째부터 나머지 전부
+
+
+    //대소문자 변경
+    document.write(str.toLowerCase(),"<br>");
+    //소문자
+    document.write(str.toUpperCase(),"<br>");
+    //대문자
+
+    var str2 = "가";
+    document.write(str2.charCodeAt(0)); 
+    document.write(string.fromCharCode(65)); 
+</script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <form action="" method="post">
+        <!--
+        form 태그의 속성들
+    url에 데이터가 나오느냐 안나오느냐 get/post
+    입력할 내용의 힌트 제공 placeholder -- 안드로이드에서의 동일한 속성은 hint
+    해당 태그에 입력가능한 상태로 만들어준다 autofocus
+    반드시 입력을 해야하는 태그로 설정해준다 required
+    읽기 전용, 수정 및 데이터를 입력할 수 없음 readonly 잠그는것/ 서버에 전송
+    최대 입력 가능한 글자 갯수 maxlength
+    최소 입력 글자 갯수 minlength
+    해당 tag 비활성화 disabled 잠그는것/ 서버에 전송하지 않음 (차이점)
+-->
+        <label for="id">아이디 : </label><input type="text" name="id" id="id" placeholder="아이디를 입력해주세요." autofocus required><br>
+        <!--
+            value 태그는 input태그에 미리 입력할 내용, 기본값 --> "어떤 버튼이에요" 알려주는 것
+            label for " " 해당 태그 클릭하면 깜빡거리게
+            태그가 감싸고 있는 input 선택하는 효과, for에 있는 속성값을 이용하여 input 태그의
+            속성 중 일치하는  id 속성값에 해당하는 태그를 선택
+        -->
+        암호 : <input type="password" name="pass" required maxlength="10" minlength="5"><br>
+        <input type="text" value="텍스트 데이터" disabled><br>
+        <input type="submit" value="로그인">
+
+        <!--체크박스/ 라디오버튼
+        checked 미리 체크 해놓음
+        -->
+        <label>
+            <input type="checkbox" name="hobby" value="game" checked>게임<br>
+        </label>
+        <label>
+
+            <input type="checkbox" name="hobby" value="cook">요리<br>
+        </label>
+        <label>
+
+            <input type="checkbox" name="hobby" value="book">책<br>
+
+            <!--
+                name 속성을 url 데이터가 읽음
+            체크 박스는 중복선택가능
+            -->
+        </label>
+<label for=""></label>
+
+    </form>
+    <!--form, 입력한 데이터를 전송할 서버페이지 url-->
+</body>
+
+</html>

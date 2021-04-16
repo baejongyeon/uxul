@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>테두리</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        /* 
+border : 선두께 선종류 색상; 상하좌우 동일한 디자인
+*/
+        /*
+선종류: solid dashed dotted double inset outset
+*/
+        .border1 {
+            border: 20px inset blue;
+            /*border-width: 20px;
+    border-style: inset;
+    border-color: blue;*/
+        }
+
+        .border2 {
+            border-left: 5px solid yellowgreen;
+            /*border-left-color: yellowgreen;
+   border-left-width: 5px;
+   border-left-style: solid;*/
+        }
+
+        .border3 {
+            border: 20px solid violet;
+            border-radius: 2000px;
+            width: 500px;
+        }
+
+        .border4 {
+            width: 300px;
+            height: 50px;
+            border: 20px solid violet;
+            border-radius: 25px;
+        }
+
+        .border5 {
+            width: 300px;
+            height: 300px;
+            border: 1px solid violet;
+            border-radius: 150px;
+            background-color: violet;
+            box-shadow: 0px 0px 15px rgb(35, 75, 204);
+        }
+
+        .border6 {
+            width: 300px;
+            height: 300px;
+            border: 1px solid violet;
+            border-bottom-right-radius: 100px;
+            border-bottom-left-radius: 80px;
+            border-top-right-radius: 90px;
+            border-top-left-radius: 70px;
+        }
+
+        /* 원 만들기 */
+    </style>
+</head>
+
+<body>
+    <div class="border1"></div>
+    <hr>
+    <div class="border2"></div>
+    <hr>
+    <div class="border3"></div>
+    <hr>
+    <div class="border4"></div>
+    <hr>
+    <div class="border5"></div>
+    <hr>
+    <div class="border6"></div>
+</body>
+
+</html>

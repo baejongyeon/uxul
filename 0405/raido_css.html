@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>체크박스 디자인 바꾸기</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<style>
+input{
+    width: 0px; /*라디오 버튼 안나옴 - 패딩이랑 백이미지로 바꿈*/
+
+}
+input:checked+label{
+    background-image: url(/icon/radio_check.png);
+}
+label{
+    padding-left: 40px;
+    background-image: url(/icon/radio_none_check.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+</style>
+
+</head>
+<body>
+    <input type="radio" name="n1" id="n1"><label for="n1">예</label><br>
+    <input type="radio" name="n1" id="n2" checked><label for="n2">아니오</label>
+</body>
+</html>

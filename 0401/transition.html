@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>transition</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        a:link,
+        a:visited {
+            width: 48px;
+            height: 32px;
+            display: inline-block;
+            background-image: url(/icon/friend.png);
+            background-size: 32px;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px solid black;
+            transition-duration: 5s;
+            transition-property: all;
+        }
+
+        a:hover {
+            background-color: burlywood;
+            border-radius: 50px;
+            background-image: url(/icon/home.png);
+            background-size: 20px;
+        }
+
+        #box {
+            width: 150px;
+            height: 150px;
+            background-image: url(/icon/calendar.png);
+            background-size: 100px;
+            background-position: center;
+            background-repeat: no-repeat;
+     
+            animation-name: ani2;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+
+
+        /*@anyframes 애니메이션명{}*/
+        @keyframes ani1 {
+            from {
+                background-image: url(/icon/youtube.png);
+            }
+
+            to {
+                background-image: url(/icon/home.png);
+            }
+        }
+            @keyframes ani2 {
+                0% {
+                    margin-left: 0px;
+                }
+
+                50% {
+                    margin-left: 885px;
+                }
+
+                100% {
+                    margin-left: 1845px;
+                }
+            }
+        
+    </style>
+</head>
+
+<body>
+    <a href="#"></a>
+    <hr>
+    <div id="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+레이아웃 두가지
+inline-block 
+float 세로 길이 잡아야함 하지만 배치하기는 조금 더 편함
+시맨틱 태그
+
+하이퍼링크 위에 마우스 올리면 이미지 바뀌는 것
+--> 하이퍼링크가 걸려있는 상태, 마우스가 올라갔을때(행보버), 클릭<--
+a:link, a:visited{
+    color
+    font-weight
+    text-decoratin
+    background-color
+    text-align
+    padding
+    }---------->>>> 기존 하이퍼링크와 방문했던 페이지의 세팅
+a:hover{
+    -->> 하이퍼링크에 마우스를 올렸을때 바뀌는 이미지들 세팅
+}
+a:active{
+    -->> 깜빡거리는 효과 같은 것들 (요즘엔 잘 사용하지 않는다/)
+}

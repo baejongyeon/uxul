@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        div {
+            width: 1000px;
+            height: 700px;
+            border: 20px dashed black;
+            padding: 50px;
+            background-image: url(/cat-5887341_640.jpg);
+            background-repeat: no-repeat;
+            /* no-repeat : 반복 안함
+            repeat-y : 세로 방향으로 반복, repeat : 가로세로 반복 - 기본값
+            */
+            background-clip: border-box;
+            /* 
+            배경이미지 사이즈 가로 세로 픽셀 %(가로길이 %임) 로 줄수있음
+            cover-박스 가로 세로 짧은것 기준으로 채움 contain-박스 가로 세로 긴것 기준으로 채움
+            */
+            background-size: 300px;
+            /*두번 넣으면 가로 세로 모두 100% 주겠다*/
+            background-position: top left;
+            /*
+            배경이미지 위치 잡을때 px 셀 단위로 좌표 설정
+            키워드를 이용해서 top center bottom right left 잡을수 있음
+            */
+            background-origin: border-box;
+            /*
+            border-box content-box padding-box
+            */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

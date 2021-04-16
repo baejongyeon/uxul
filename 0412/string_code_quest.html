@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        /*
+           코드 : 제품, 사람, 학생들에 대한 고유번호 체계
+    
+           제조사번호-물품종류-고유코드
+    
+           물품 종류 : 1-식품 2- 전자제품 3-의약품 4-생활용품 1-4 해당 값 아니면 코드 오류
+    
+           제품코드를 입력 받아서 해당 물품 종류를 출력
+    
+        */
+        var code = prompt("제품 코드 입력");
+        var n1 = code.substring(code.indexof("-") + 1, code.indexOf("-"));
+
+       switch(n1){
+            case "1":
+                document.write("입력한 물품은 식품입니다","<br>");
+                break;
+
+                case "2":
+                document.write("입력한 물품은 전자제품입니다","<br>");
+                break;
+
+                case "3":
+                document.write("입력한 물품은 의약품입니다","<br>");
+                break;
+
+                case "4":
+                document.write("입력한 물품은 생활용품입니다","<br>");
+                break;
+
+                default :
+                document.write("입력한 물품은 등록되어있지 않습니다.","<br>");
+                break;
+        }
+        
+        
+       /* if ( ){
+            document.write("해당 제품은 식품입니다")};
+        else if (){
+            document.write("해당 제품은 전자제품입니다")};
+        else if ()
+            document.write("해당 제품은 의약품입니다");
+        else if ()
+            document.write("해당 제품은 생활용품입니다");
+        else
+            document.write("해당 제품은 등록되어 있지 않습니다"); */
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>background clip</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            padding: 50px;
+            border: 50px dashed black;
+            background-color: aqua;
+            background-clip: content-box;
+        }
+
+        /*배경색을 어디 영역까지 채울것인지 설정하는것-background clip
+        border-box : 테두리까지 채움
+        padding-box : padding 영역까지 채움
+        content-box : content 영역까지 채움
+        */
+        .clip_text {
+            background-image: url(/cat-5887341_640.jpg);
+            font-size: 32px;
+            font-weight: bold;
+            background-clip: text;
+            -webkit-background-clip: text; /* 크롬에서 지원하는 것*/
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <hr>
+    <div class="clip_text">
+        글자 투명화 테스트
+    </div>
+</body>
+
+</html>
